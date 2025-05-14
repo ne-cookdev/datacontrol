@@ -1,0 +1,6 @@
+[submodule "clicknshop-backend"]
+	path = clicknshop-backend
+	url = https://github.com/ne-cookdev/clicknshop-backend.git
+[submodule "clicknshop-frontend"]
+	path = clicknshop-frontend
+	url = https://github.com/ne-cookdev/clicknshop-frontend.git

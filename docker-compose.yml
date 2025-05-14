@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  web:
+    build: ./data-control-backend
+    container_name: dc-django
+    command: python manage.py runserver 0.0.0.0:8000
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data-control-backend:/app
+  frontend:
+    build:
+      context: ./data-control-frontend
+      dockerfile: Dockerfile.dev
+    container_name: dc-react
+    depends_on:
+      - web
+    env_file:
+      - .env
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./data-control-frontend:/react-frontend
+      - /react-frontend/node_modules
