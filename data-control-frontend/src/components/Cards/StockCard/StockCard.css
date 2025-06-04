@@ -1,0 +1,71 @@
+.stockcard_background {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--white);
+  border-radius: 40px;
+}
+
+.stockcard_h1 {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--electric);
+}
+
+.stockcard_text_div {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stockcard_text {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.stockcard_icons_price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stockcard_icons_div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.stockcard_editicon {
+  width: 40px;
+  height: 40px;
+  fill: var(--lavender);
+  cursor: pointer;
+}
+
+.stockcard_trashicon {
+  width: 30px;
+  height: 40px;
+  fill: var(--lavender);
+  cursor: pointer;
+}
+
+.stockcard_price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--electric);
+}

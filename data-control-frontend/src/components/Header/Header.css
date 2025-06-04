@@ -1,0 +1,37 @@
+.header_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: var(--electric);
+}
+
+.header_logout_div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.header_logout_span {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--electric);
+}
+
+.header_logout_icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--lavender);
+}

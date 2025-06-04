@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Tag.css";
+
 interface TagProps {
   text: string;
   classNamediv?: string;
@@ -8,8 +10,8 @@ interface TagProps {
 
 export const Tag: React.FC<TagProps> = (props) => {
   return (
-    <div className={`${props.classNamediv ? props.classNamediv : "tag_div"}`}>
-      <span className={`${props.classNamespan ? props.classNamespan : "tag_span"}`}>{props.text}</span>
+    <div className={`tag_div ${props.classNamediv}`}>
+      <span className={`tag_span ${props.classNamespan}`}>{props.text}</span>
     </div>
   );
 };

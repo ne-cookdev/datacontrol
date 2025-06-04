@@ -1,0 +1,36 @@
+.orderdetailcard_background {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--white);
+  border: 1px solid var(--electric);
+  border-radius: 40px;
+}
+
+.orderdetailcard_name {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--electric);
+}
+
+.orderdetailcard_quantity {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.orderdetailcard_price {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: end;
+  color: var(--electric);
+}

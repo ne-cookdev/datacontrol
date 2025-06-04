@@ -1,0 +1,50 @@
+.carrierspage_cards_background {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 45px 130px;
+  background-color: var(--magnolia);
+}
+
+.carrierspage_cards_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+}
+
+.carrierspage_form_background {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 130px;
+  background-color: var(--magnolia);
+}
+
+.carrierspage_form_container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrierspage_form_bg {
+  width: 500px;
+  background-color: var(--white);
+  border-radius: 40px;
+  padding: 32px;
+}
+
+.carrierspage_form_h3 {
+  width: 100%;
+  margin: 0;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 700;
+
+  span {
+    color: var(--electric);
+  }
+}

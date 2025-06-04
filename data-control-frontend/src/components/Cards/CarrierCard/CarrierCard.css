@@ -1,0 +1,51 @@
+.carriercard_background {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--white);
+  border-radius: 40px;
+}
+
+.carriercard_info_div {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carriercard_name {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: var(--electric);
+}
+
+.carriercard_icons_div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+}
+
+.carriercard_editicon {
+  width: 40px;
+  height: 40px;
+  fill: var(--lavender);
+  cursor: pointer;
+}
+
+.carriercard_trashicon {
+  width: 30px;
+  height: 40px;
+  fill: var(--lavender);
+  cursor: pointer;
+}

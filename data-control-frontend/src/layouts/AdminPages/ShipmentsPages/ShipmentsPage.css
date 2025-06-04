@@ -1,0 +1,65 @@
+.shipmentspage_cards_background {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 45px 130px;
+  background-color: var(--magnolia);
+}
+
+.shipmentspage_cards_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.shipmentspage_form_background {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 130px;
+  background-color: var(--magnolia);
+}
+
+.shipmentspage_form_background {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shipmentspage_form_bg {
+  width: 500px;
+  background-color: var(--white);
+  border-radius: 40px;
+  padding: 32px;
+}
+
+.shipmentspage_form_h3 {
+  width: 100%;
+  margin: 0;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 700;
+
+  span {
+    color: var(--electric);
+  }
+}
+
+.shipmentspage_form_select {
+  height: 3.5rem;
+  width: 100%;
+  padding-left: 1.5rem;
+  border: 1px solid var(--lavender);
+  border-radius: 14px;
+  font-size: 1rem;
+  background-color: var(--white);
+  padding-right: 2.5rem;
+
+  &:focus {
+    border: 2px solid var(--electric);
+  }
+}

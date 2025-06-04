@@ -5,7 +5,13 @@ const Homepage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/courses");
+    const access = localStorage.getItem("access");
+    const refresh = localStorage.getItem("refresh");
+    if (access && refresh) {
+      navigate("/products");
+    } else {
+      navigate("/auth/login");
+    }
   }, [navigate]);
 
   return null;

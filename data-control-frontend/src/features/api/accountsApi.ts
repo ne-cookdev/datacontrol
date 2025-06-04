@@ -5,33 +5,33 @@ export const accountsApi = createApi({
   keepUnusedDataFor: 10,
   baseQuery: fetchBaseQuery({
     // @ts-ignore
-    baseUrl: import.meta.env.VITE_APP_API_URL || "%VITE_APP_API_URL%",
+    baseUrl: "http://localhost:8000/api/v1/",
   }),
   endpoints: (builder) => ({
     registerUser: builder.mutation({
       query: ({ email, password }) => ({
-        url: "v1/signup/",
+        url: "auth/signup/",
         method: "POST",
         body: { email, password },
       }),
     }),
     loginUser: builder.mutation({
       query: ({ email, password }) => ({
-        url: "v1/login/",
+        url: "auth/login/",
         method: "POST",
         body: { email, password },
       }),
     }),
     logoutUser: builder.mutation({
       query: ({ refresh_token }) => ({
-        url: "v1/logout/",
+        url: "auth/logout/",
         method: "POST",
         body: { refresh_token },
       }),
     }),
     updateAccessToken: builder.mutation({
       query: ({ refresh }) => ({
-        url: "v1/token/refresh/",
+        url: "token/refresh/",
         method: "POST",
         body: { refresh },
       }),

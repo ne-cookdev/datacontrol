@@ -1,0 +1,89 @@
+.orderspage_cards_background {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 45px 130px;
+  background-color: var(--magnolia);
+}
+
+.orderspage_cards_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.orderspage_form_background {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 130px;
+  background-color: var(--magnolia);
+}
+
+.orderspage_form_container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderspage_form_bg {
+  width: 500px;
+  background-color: var(--white);
+  border-radius: 40px;
+  padding: 32px;
+}
+
+.orderspage_form_h3 {
+  width: 100%;
+  margin: 0;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 700;
+
+  span {
+    color: var(--electric);
+  }
+}
+
+.orderspage_form_select {
+  height: 3.5rem;
+  width: 100%;
+  padding-left: 1.5rem;
+  border: 1px solid var(--lavender);
+  border-radius: 14px;
+  font-size: 1rem;
+  background-color: var(--white);
+  padding-right: 2.5rem;
+
+  &:focus {
+    border: 2px solid var(--electric);
+  }
+}
+
+.orderspage_form_selectproduct {
+  height: 3.5rem;
+  width: 100%;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderspage_form_selectproduct_input {
+  width: 5rem;
+  height: 3rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 1px solid var(--lavender);
+  border-radius: 14px;
+  font-size: 1rem;
+  background-color: var(--white);
+
+  &:focus {
+    border: 2px solid var(--electric);
+  }
+}

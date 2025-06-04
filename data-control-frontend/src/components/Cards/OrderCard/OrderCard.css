@@ -1,0 +1,109 @@
+.ordercard_background {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background-color: var(--white);
+  border-radius: 40px;
+}
+
+.ordercard_info_part {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ordercard_h1 {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--electric);
+}
+
+.ordercard_tag1div {
+  border: 1px solid var(--lavender);
+}
+
+.ordercard_tag1span {
+  color: var(--lavender);
+}
+
+.ordercard_tag2div {
+  border: 1px solid var(--orange);
+}
+
+.ordercard_tag2span {
+  color: var(--orange);
+}
+
+.ordercard_tag3div {
+  border: 1px solid var(--green);
+}
+
+.ordercard_tag3span {
+  color: var(--green);
+}
+
+.ordercard_text_div {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ordercard_text {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.ordercard_icons_price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ordercard_icons_div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.ordercard_editicon {
+  width: 40px;
+  height: 40px;
+  fill: var(--lavender);
+  cursor: pointer;
+}
+
+.ordercard_trashicon {
+  width: 30px;
+  height: 40px;
+  fill: var(--lavender);
+  cursor: pointer;
+}
+
+.ordercard_price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--electric);
+}
+
+.ordercard_details_part {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}

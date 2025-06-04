@@ -37,13 +37,7 @@ export const Loginpage = () => {
       localStorage.setItem("refresh", refreshtoken);
       const accesstoken = returned?.access ?? null;
       localStorage.setItem("access", accesstoken);
-      const role = returned?.role ?? null;
-      localStorage.setItem("role", role);
-      if (role == "admin" || role == "staff") {
-        navigate("/orders");
-      } else {
-        navigate("/catalog");
-      }
+      navigate("/products");
     } catch (error) {
       const errorResponse = error as AuthErrorResponse;
       if (errorResponse.data?.email) {

@@ -44,8 +44,6 @@ export const Registerpage = () => {
       localStorage.setItem("refresh", refreshtoken);
       const accesstoken = returned?.access ?? null;
       localStorage.setItem("access", accesstoken);
-      const role = returned?.role ?? null;
-      localStorage.setItem("role", role);
       navigate("/auth/login");
     } catch (error) {
       const errorResponse = error as AuthErrorResponse;

@@ -4,7 +4,7 @@
 
 @layer components {
   .auth_main {
-    @apply h-dvh bg-[#e5e5fe] flex flex-col items-center justify-center;
+    @apply h-dvh bg-starkit-magnolia flex flex-col items-center justify-center;
   }
 
   .auth_form_background {
